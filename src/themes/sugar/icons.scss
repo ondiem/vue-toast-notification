@@ -16,6 +16,11 @@
       background: url(./icons/info.svg) no-repeat;
     }
 
+    .v-toast__close-icon {
+      display: block;
+      margin-right: 1em;
+    }
+
     &.v-toast__item--success .v-toast__icon {
       background: url(./icons/success.svg) no-repeat;
     }

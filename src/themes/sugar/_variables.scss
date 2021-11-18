@@ -1,11 +1,17 @@
 $toast-colors: () !default;
 $toast-colors: map-merge(
     (
-      "success": #47d78a,
+      "success": #F0F9F6,
       "info": #1c85d5,
-      "warning": #febc22,
-      "error": #f7471c,
+      "warning": #FFFAEB,
+      "error": #F4C3C9,
       "default": #343a40
     ),
     $toast-colors
 );
+
+/* Fonts */
+$font-bold: 'bold', helvetica, sans-serif;
+$font-regular: 'regular', helvetica, sans-serif;
+$font-medium: 'medium', helvetica, sans-serif;
+$font-light: 'light', helvetica, sans-serif;

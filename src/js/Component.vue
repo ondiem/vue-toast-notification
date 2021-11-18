@@ -9,9 +9,11 @@
       :class="[`v-toast__item--${type}`, `v-toast__item--${position}`]"
       @mouseover="toggleTimer(true)"
       @mouseleave="toggleTimer(false)"
-      @click="whenClicked">
-      <div class="v-toast__icon"></div>
-      <p class="v-toast__text" v-html="message"></p>
+    >
+      <div @click="whenClicked" class="v-toast__icon v-toast__icon-color"></div>
+      <p @click="whenClicked" class="v-toast__text" v-html="message"></p>
+      <!-- TODO: add close button -->
+      <img class="v-toast__close-icon" src="../themes/sugar/icons/close.svg" @click="dismiss" />
     </div>
   </transition>
 </template>
@@ -35,7 +37,7 @@
       },
       position: {
         type: String,
-        default: Positions.BOTTOM_RIGHT,
+        default: Positions.BOTTOM,
         validator(value) {
           return Object.values(Positions).includes(value)
         }
@@ -138,6 +140,7 @@
       },
 
       whenClicked() {
+        console.log('Is Dismissible:', this.dismissible)
         if (!this.dismissible) return;
         this.onClick.apply(null, arguments);
         this.dismiss()
