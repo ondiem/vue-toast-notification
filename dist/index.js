@@ -75,12 +75,12 @@ __webpack_require__.d(__webpack_exports__, {
 
 // UNUSED EXPORTS: Component, Positions
 
-;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/js/Component.vue?vue&type=template&id=17594843&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"enter-active-class":_vm.transition.enter,"leave-active-class":_vm.transition.leave}},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.isActive),expression:"isActive"}],staticClass:"v-toast__item",class:[("v-toast__item--" + _vm.type), ("v-toast__item--" + _vm.position)],attrs:{"role":"alert"},on:{"mouseover":function($event){return _vm.toggleTimer(true)},"mouseleave":function($event){return _vm.toggleTimer(false)}}},[_c('div',{staticClass:"v-toast__icon v-toast__icon-color",on:{"click":_vm.whenClicked}}),_vm._v(" "),_c('span',{staticClass:"v-toast__text",domProps:{"innerHTML":_vm._s(_vm.message)},on:{"click":_vm.whenClicked}}),_vm._v(" "),_c('img',{staticClass:"v-toast__close-icon",attrs:{"src":__webpack_require__(524)},on:{"click":_vm.dismiss}})])])}
+;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/js/Component.vue?vue&type=template&id=f800a47a&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"enter-active-class":_vm.transition.enter,"leave-active-class":_vm.transition.leave}},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.isActive),expression:"isActive"}],staticClass:"v-toast__item",class:[("v-toast__item--" + _vm.type), ("v-toast__item--" + _vm.position)],attrs:{"role":"alert"},on:{"mouseover":function($event){return _vm.toggleTimer(true)},"mouseleave":function($event){return _vm.toggleTimer(false)}}},[_c('div',{staticClass:"v-toast__icon v-toast__icon-color"}),_vm._v(" "),_c('span',{staticClass:"v-toast__text",domProps:{"innerHTML":_vm._s(_vm.message)}}),_vm._v(" "),_c('img',{staticClass:"v-toast__close-icon",attrs:{"src":__webpack_require__(524)},on:{"click":_vm.dismiss}})])])}
 var staticRenderFns = []
 
 
-;// CONCATENATED MODULE: ./src/js/Component.vue?vue&type=template&id=17594843&
+;// CONCATENATED MODULE: ./src/js/Component.vue?vue&type=template&id=f800a47a&
 
 ;// CONCATENATED MODULE: ./src/js/helpers.js
 const removeElement = el => {
@@ -155,6 +155,8 @@ class Timer {
 //
 //
 //
+//
+//
 
 
 
@@ -181,7 +183,7 @@ class Timer {
     },
     duration: {
       type: Number,
-      default: 3000
+      default: 0
     },
     dismissible: {
       type: Boolean,

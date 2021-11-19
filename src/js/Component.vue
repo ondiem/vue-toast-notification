@@ -10,8 +10,10 @@
       @mouseover="toggleTimer(true)"
       @mouseleave="toggleTimer(false)"
     >
-      <div @click="whenClicked" class="v-toast__icon v-toast__icon-color"></div>
-      <span @click="whenClicked" class="v-toast__text" v-html="message"></span>
+      <div class="v-toast__icon v-toast__icon-color"></div>
+      <!-- <span @click="whenClicked" class="v-toast__text" v-html="message"></span> --> <!-- NOTE: this is how it should be to affect the onClick method -->
+      <span class="v-toast__text" v-html="message"></span>
+      <!-- <div @click="whenClicked">Click here</div> --> <!-- NOTE: this will be added when we are ready for onClick events -->
       <!-- TODO: add close button -->
       <img class="v-toast__close-icon" src="../themes/sugar/icons/close.svg" @click="dismiss" />
     </div>
@@ -44,7 +46,7 @@
       },
       duration: {
         type: Number,
-        default: 3000
+        default: 0
       },
       dismissible: {
         type: Boolean,
