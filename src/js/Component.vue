@@ -11,7 +11,7 @@
       @mouseleave="toggleTimer(false)"
     >
       <div @click="whenClicked" class="v-toast__icon v-toast__icon-color"></div>
-      <p @click="whenClicked" class="v-toast__text" v-html="message"></p>
+      <span @click="whenClicked" class="v-toast__text" v-html="message"></span>
       <!-- TODO: add close button -->
       <img class="v-toast__close-icon" src="../themes/sugar/icons/close.svg" @click="dismiss" />
     </div>
